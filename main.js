@@ -37,7 +37,8 @@ function initializeClock(id, endtime) {
   var timeinterval = setInterval(updateClock, 1000);
 }
 
-var deadline = new Date(Date.parse(new Date()) + 15 * 24 * 60 * 60 * 1000);
+var shopOpeningDate = "Sun May 13 2017 08:00:00 GMT+0200 (CET)";
+var deadline = new Date(shopOpeningDate);
 document.addEventListener('DOMContentLoaded',function(){
   initializeClock('clockdiv', deadline);
 });
